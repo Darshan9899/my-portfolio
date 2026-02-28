@@ -9,7 +9,7 @@ main {
   left: 0; 
   right: 0;
   align-items: center;
-  background: linear-gradient(135deg, #272f54 0%, #b7b88a 100%);
+   background: linear-gradient(135deg, #0f172a, #1e293b);
   color: white;
 }
 
@@ -29,7 +29,7 @@ main {
 }
 
 .home-title {
-  font-size: 3.5rem;
+  font-size: 3.1rem;
   font-weight: bold;
   margin-bottom: 1rem;
   line-height: 1.2;
@@ -123,6 +123,7 @@ main {
 .home-image {
   flex: 1;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -147,10 +148,47 @@ main {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
+.social-icons {
+  display: flex;
+  gap: 25px;
+  font-size: 28px;
+  justify-content: center;
+  margin-top: 20px;
+  
+}
+
+.social-icons a {
+  color: #ffffff;
+  transition: 0.3s;
+}
+
+/* Hover Effect 🔥 */
+.social-icons a:hover {
+  transform: scale(1.3);
+}
+
+/* Brand Colors */
+.social-icons a:nth-child(1):hover {
+  color: #E1306C; /* Instagram */
+}
+
+.social-icons a:nth-child(2):hover {
+  color: #25D366; /* WhatsApp */
+}
+
+.social-icons a:nth-child(3):hover {
+  color: #0077B5; /* LinkedIn */
+}
+
+.social-icons a:nth-child(4):hover {
+  color: black; /* github */
+}
+
+
 /* About section styles */
 .about-section {
-  padding: 30px 0 1000px 0;
-  background:  linear-gradient(135deg, #b3b9d6 0%, #414126 100%);
+  padding: 30px 0 1500px 0;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
   color: #333;
 }
 
@@ -170,11 +208,11 @@ main {
 }
 
 .about-title {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: bold;
   text-align: center;
   top: 0;
-  color: #272f54;
+  color:white;
 }
 
 .about-description {
@@ -182,6 +220,7 @@ main {
   line-height: 1.6;
   margin-bottom: 1.5rem;
   opacity: 0.8;
+  color:#ffa500;
 }
 
 .about-skills {
@@ -192,7 +231,7 @@ main {
 .about-skills h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
-  color: #272f54;
+  color: white;
 }
 
 .skills-grid {
@@ -231,7 +270,7 @@ main {
 .about-education h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
-  color: #272f54;
+  color: white;
 }
 
 .education-boxes {
@@ -329,78 +368,12 @@ main {
   font-weight: 400;
 }
 
-.certificate-display {
-  margin-top: 2rem;
-  padding: 1.5rem;
-  background: linear-gradient(135deg, rgba(39, 75, 36, 0.95), rgba(97, 106, 115, 0.9));
-  border-radius: 10px;
-  border: 2px solid rgba(255, 107, 107, 0.2);
-  position:absolute;
-  z-index: -2;
-  box-shadow:
-    0 8px 20px rgba(0, 0, 0, 0.08),
-    inset 0 1px 0 rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(10px);
-}
 
-.certificate-display h4 {
-  font-size: 1.2rem;
-  margin-bottom: 1.2rem;
-  color: #272f54;
-  font-weight: 700;
-  text-align: center;
-  position:absolute;
-}
 
-.certificate-display h4::before {
-  content: '📄';
-  margin-right: 0.5rem;
-  animation: pulse 2s ease-in-out infinite;
-}
-
-.certificate-display iframe,
-.certificate-display img {
-  display: block;
-  margin: 0 auto;
-  border-radius: 12px;
-  box-shadow:
-    0 8px 25px rgba(0, 0, 0, 0.15),
-    0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-  border: 2px solid rgba(255, 255, 255, 0.8);
-}
-
-.certificate-display iframe:hover,
-.certificate-display img:hover {
-  transform: scale(1.02);
-  box-shadow:
-    0 12px 35px rgba(0, 0, 0, 0.2),
-    0 6px 12px rgba(0, 0, 0, 0.15);
-}
-
-/* Certificate image styling */
-.certificate-image {
-  display: block;
-  margin: 1rem auto 0;
-  max-width: 100%;
-  height: auto;
-  border-radius: 12px;
-  box-shadow:
-    0 8px 25px rgba(0, 0, 0, 0.15),
-    0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-  border: 2px solid rgba(255, 255, 255, 0.8);
-}
-
-.certificate-image:hover {
-  transform: scale(1.02);
-  box-shadow:
-    0 12px 35px rgba(0, 0, 0, 0.2),
-    0 6px 12px rgba(0, 0, 0, 0.15);
-}
 .about-hobbies {
   margin-top: 4rem;
   text-align: center;
+  color: white;
 }
 
 .hobby-cards {
@@ -441,6 +414,7 @@ main {
 .leadership-involvement {
   margin-top: 4.5rem;
   text-align: center;
+  color: white;
 }
 
 .leadership-cards {
@@ -481,10 +455,41 @@ main {
 }
 
 /* Responsive design */
-@media (max-width:600px) {
+@media (max-width: 768px) {
   .home-container {
     flex-direction: column;
     text-align: center;
+    gap: 1.5rem;
+  }
+
+  .home-title {
+    font-size: 2.8rem;
+  }
+
+  .home-subtitle {
+    font-size: 1.3rem;
+  }
+
+  .home-description {
+    font-size: 1.1rem;
+  }
+
+  .avatar {
+    width: 250px;
+    height: 280px;
+  }
+
+  .social-icons {
+    gap: 20px;
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .home-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
   }
 
   .home-title {
@@ -501,26 +506,78 @@ main {
 
   .avatar {
     width: 200px;
-    height: 200px;
+    height: 220px;
+  }
+
+  .social-icons {
+    gap: 15px;
+    font-size: 20px;
+  }
+
+  .home-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    width: 200px;
   }
 }
 
-@media (max-width:600px) {
+@media (max-width: 480px) {
+  .home-title {
+    font-size: 2.2rem;
+  }
+
+  .home-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .home-description {
+    font-size: 0.95rem;
+  }
+
+  .avatar {
+    width: 180px;
+    height: 200px;
+  }
+
+  .social-icons {
+    gap: 12px;
+    font-size: 18px;
+  }
+}
+
+/* About section responsive */
+@media (max-width: 1024px) {
   .about-container {
     flex-direction: column;
     text-align: center;
+    gap: 2rem;
+  }
+
+  .about-content {
+    flex: none;
+    max-width: 100%;
   }
 
   .about-title {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
   }
 
   .about-description {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 
   .skills-grid {
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+  }
+
+  .skill-tag {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.8rem;
   }
 
   .education-boxes {
@@ -531,16 +588,219 @@ main {
 
   .education-box {
     max-width: 100%;
-    margin: 0 1rem;
+    margin: 0;
+    padding: 2rem 1.5rem;
   }
 
   .education-box:hover {
     transform: translateY(-8px) scale(1.01);
   }
 
-  .certificate-display iframe,
-  .certificate-display img {
-    height: 250px;
+  .certificate-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-top: 1rem;
+  }
+
+  .hobby-cards {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .leadership-cards {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    padding: 20px 0 50px 0;
+  }
+
+  .about-container {
+    padding: 0 1rem;
+  }
+
+  .about-title {
+    font-size: 2.5rem;
+  }
+
+  .about-description {
+    font-size: 1rem;
+  }
+
+  .about-skills h2,
+  .about-education h2,
+  .about-hobbies h2,
+  .leadership-involvement h2 {
+    font-size: 1.8rem;
+  }
+
+  .education-box h3 {
+    font-size: 1.6rem;
+  }
+
+  .education-box p {
+    font-size: 1rem;
+  }
+
+  .hobby-card,
+  .leadership-card {
+    padding: 1.5rem;
+  }
+
+  .hobby-card span,
+  .leadership-card span {
+    font-size: 2rem;
+  }
+
+  .hobby-card h3,
+  .leadership-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .hobby-card p,
+  .leadership-card p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-section {
+    padding: 15px 0 30px 0;
+  }
+
+  .about-container {
+    padding: 0 0.5rem;
+  }
+
+  .about-title {
+    font-size: 2.2rem;
+  }
+
+  .about-description {
+    font-size: 0.95rem;
+  }
+
+  .about-skills h2,
+  .about-education h2,
+  .about-hobbies h2,
+  .leadership-involvement h2 {
+    font-size: 1.6rem;
+  }
+
+  .skills-grid {
+    gap: 0.6rem;
+  }
+
+  .skill-tag {
+    font-size: 0.75rem;
+    padding: 0.3rem 0.6rem;
+  }
+
+  .education-box {
+    padding: 1.5rem 1rem;
+  }
+
+  .education-box h3 {
+    font-size: 1.4rem;
+  }
+
+  .education-box p {
+    font-size: 0.95rem;
+  }
+
+  .certificate-image {
+    max-width: 250px;
+  }
+
+  .hobby-cards {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+
+  .leadership-cards {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+
+  .hobby-card,
+  .leadership-card {
+    padding: 1.2rem;
+  }
+
+  .hobby-card span,
+  .leadership-card span {
+    font-size: 1.8rem;
+  }
+
+  .hobby-card h3,
+  .leadership-card h3 {
+    font-size: 1rem;
+  }
+
+  .hobby-card p,
+  .leadership-card p {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-section {
+    padding: 10px 0 20px 0;
+  }
+
+  .about-title {
+    font-size: 2rem;
+  }
+
+  .about-description {
+    font-size: 0.9rem;
+  }
+
+  .about-skills h2,
+  .about-education h2,
+  .about-hobbies h2,
+  .leadership-involvement h2 {
+    font-size: 1.4rem;
+  }
+
+  .education-box {
+    padding: 1.2rem 0.8rem;
+  }
+
+  .education-box h3 {
+    font-size: 1.3rem;
+  }
+
+  .education-box p {
+    font-size: 0.9rem;
+  }
+
+  .certificate-image {
+    max-width: 200px;
+  }
+
+  .hobby-card,
+  .leadership-card {
+    padding: 1rem;
+  }
+
+  .hobby-card span,
+  .leadership-card span {
+    font-size: 1.6rem;
+  }
+
+  .hobby-card h3,
+  .leadership-card h3 {
+    font-size: 0.95rem;
+  }
+
+  .hobby-card p,
+  .leadership-card p {
+    font-size: 0.8rem;
   }
 }
 

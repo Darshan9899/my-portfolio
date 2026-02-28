@@ -2,10 +2,16 @@ import React from 'react'
 import { Routes, Route } from 'react-router-dom'
 import Navbar from './Navbar'
 import About from './about'
-import Certificates from './certificates'
+import Certificates from './Certificates'
 import './App.css'
-import Projects from './projects'
+import Projects from './Projects'
 import myPhoto from './assets/my photo.jpg'
+import { FaInstagram, FaWhatsapp, FaLinkedin, FaGithub } from "react-icons/fa";
+import Footer from './Footer'
+import Contact from "./Contact";
+
+
+
 
 const Home = () => (
   <main>
@@ -30,9 +36,42 @@ const Home = () => (
         </div>
         <div className="home-image">
           {<img src={myPhoto} alt="Darshan Patil" className="avatar" />}
+
+
+          <div className="social-icons">
+            <a
+              href="https://www.instagram.com/darshan_patil_9899_/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaInstagram />
+            </a>
+            <a
+              href="https://wa.me/919359566067"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaWhatsapp />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/darshan-patil-63230230a/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedin />
+            </a>
+            <a
+              href="https://github.com/Darshan9899"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaGithub />
+            </a>
+          </div>
         </div>
       </div>
     </section>
+      <Footer />
   </main>
 )
 
@@ -45,9 +84,12 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/certificates" element={<Certificates />} />
         <Route path="/projects" element={<Projects />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </>
   )
 }
+
+
 
 export default App

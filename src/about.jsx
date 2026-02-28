@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from './Footer'
 
 const About = () => {
 
@@ -30,6 +31,7 @@ const About = () => {
                 <span className="skill-tag">🚀 Express.js</span>
                 <span className="skill-tag">🎯 UI/UX Design</span>
                 <span className="skill-tag">🗄️ MySQL</span>
+
               </div>
             </div>
             <div className="about-education">
@@ -42,14 +44,17 @@ const About = () => {
                 <div className="education-box">
                   <h3>Higher Secondary Certificate (12th)</h3>
                   <p>Maharashtra State Board, 2022, with 72.83%</p>
-                  <img src="./assets/certificates/Screenshot 2026-01-26 153639.png" alt="12th Certificate" className="certificate-image" />
+
                 </div>
                 <div className="education-box">
                   <h3>Secondary School Certificate (10th)</h3>
                   <p>Maharashtra State Board, 2020, with 90%</p>
-                  <img src="./assets/certificates/Screenshot 2026-01-26 153806.png" alt="10th Certificate" className="certificate-image" />
+
                 </div>
               </div>
+            </div>
+            <div className='certificates'>
+              <img src="" alt="10th certificate" />
             </div>
             <div className="about-hobbies">
               <h2>Hobbies & Interests</h2>
@@ -132,7 +137,7 @@ const About = () => {
                   </p>
                 </div>
 
-                 <div className="leadership-card">
+                <div className="leadership-card">
                   <span>👨‍⚖️</span>
                   <h3>Active NSS Volunteer</h3>
                   <p>
@@ -140,7 +145,7 @@ const About = () => {
                   </p>
                 </div>
 
-                 <div className="leadership-card">
+                <div className="leadership-card">
                   <span>🗣</span>
                   <h3>Communication Skills</h3>
                   <p>
@@ -154,6 +159,7 @@ const About = () => {
           </div>
         </div>
       </section>
+      <Footer />
     </main>
   )
 }
