@@ -10,10 +10,9 @@ const About = () => {
           <div className="about-content">
             <h1 className="about-title">About Me</h1>
             <p className="about-description">
-              I'm a passionate Full Stack Developer and UI/UX Designer with a love for creating
-              beautiful and functional web applications. With expertise in modern technologies
-              like React, Node.js, and various design tools, I bring ideas to life through code
-              and creative design.
+              Aspiring Computer Science Engineer with strong problem-solving and technical skills in software and web
+              development. Looking for an entry-level role to contribute to real-world projects while continuously learning and
+              enhancing my professional abilities
             </p>
 
             <div className="about-skills">
@@ -23,13 +22,13 @@ const About = () => {
                 <span className="skill-tag">🟨 JavaScript</span>
                 <span className="skill-tag">🟢 Node.js</span>
                 <span className="skill-tag">🌐 HTML/CSS</span>
-                <span className="skill-tag">🎨 Figma</span>
+                <span className="skill-tag">☕ JAVA</span>
                 <span className="skill-tag">📚 Git</span>
                 <span className="skill-tag">🐍 Python</span>
                 <span className="skill-tag">⚡ C++</span>
                 <span className="skill-tag">🍃 MongoDB</span>
                 <span className="skill-tag">🚀 Express.js</span>
-                <span className="skill-tag">🎯 UI/UX Design</span>
+                <span className="skill-tag">🎯 SpringBoot</span>
                 <span className="skill-tag">🗄️ MySQL</span>
 
               </div>
@@ -54,7 +53,6 @@ const About = () => {
               </div>
             </div>
             <div className='certificates'>
-              <img src="" alt="10th certificate" />
             </div>
             <div className="about-hobbies">
               <h2>Hobbies & Interests</h2>

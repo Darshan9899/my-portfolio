@@ -2,13 +2,15 @@ import React from 'react'
 import { Routes, Route } from 'react-router-dom'
 import Navbar from './Navbar'
 import About from './about'
-import Certificates from './Certificates'
+import Certificates from './certificates'
 import './App.css'
 import Projects from './Projects'
 import myPhoto from './assets/my photo.jpg'
 import { FaInstagram, FaWhatsapp, FaLinkedin, FaGithub } from "react-icons/fa";
 import Footer from './Footer'
-import Contact from "./Contact";
+import Contact from "./contact";
+import AdminLogin from './AdminLogin'
+import AdminDashboard from './AdminDashboard';
 
 
 
@@ -85,6 +87,8 @@ const App = () => {
         <Route path="/certificates" element={<Certificates />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/admin/login" element={<AdminLogin />} />
+        <Route path="/admin/dashboard" element={<AdminDashboard />} />
       </Routes>
     </>
   )

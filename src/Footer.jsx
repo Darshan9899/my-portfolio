@@ -14,6 +14,7 @@ function Footer() {
           <a href="#">About</a>
           <a href="#">Projects</a>
           <a href="#">Contact</a>
+          <a href="#">Certificates</a>
         </div>
 
         {/* Skills */}
